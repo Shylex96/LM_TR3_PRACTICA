@@ -1,0 +1,21 @@
+section {
+  background-color: #444654;
+  margin-left: 200px; 
+  padding: 20px;
+  overflow-y: auto; 
+  height: 100vh; 
+	margin-top: 3%;
+}
+
+
+
+.main-section {
+  background-color: #444654;
+  margin-left: 250px;
+  padding: 20px;
+  overflow-y: auto; 
+  height: 100vh; 
+  display: flex;
+}
+
+
