@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Práctica LM Tema 8 - Esteban Albarrán Tirado</title>
+	<link rel="stylesheet" href="../app/css/styles.css">
+	<meta name="author" content="Esteban Albarrán Tirado"/>
+	<meta name="description" content="Práctica de LM del 3er trimestre.">
+	<link rel="shortcut icon" type="image/png" href="/app/resources/img/favicon.png">
+</head>
+
+<body>
+	<header>
+		<h1 class="header-title" id="h-main"></h1>
+	</header>
+	<nav>
+		<h2 class="nav-title">Lista de Ejercicios</h2>
+		<div class="nav-separator"></div>
+		<ul>
+			<li><span class="nav-category">Básicos:</span></li>
+			<li><button class="nav-button1" id="nav-btn1">Ejercicio 17</button></li>
+			<li><button class="nav-button1" id="nav-btn2">Ejercicio 18</button></li>
+			<li><button class="nav-button1" id="nav-btn3">Ejercicio 19</button></li>
+			<li><button class="nav-button1" id="nav-btn4">Ejercicio 20</button></li>
+			<li><button class="nav-button1" id="nav-btn5">Ejercicio 21</button></li>
+		</ul>
+		<div class="nav-separator"></div>
+		<ul>
+			<li><span class="nav-category">Intermedios:</span></li>
+			<li><button class="nav-button2" id="nav-btn6">Ejercicio 3</button></li>
+			<li><button class="nav-button2" id="nav-btn7">Ejercicio 6</button></li>
+			<li><button class="nav-button2" id="nav-btn8">Ejercicio 8</button></li>
+			<li><button class="nav-button2" id="nav-btn9">Ejercicio 10</button></li>
+		</ul>
+		<div class="nav-separator"></div>
+		<ul>
+			<li><span class="nav-category">Avanzados:</span></li>
+			<li><button class="nav-button3" id="nav-btn10">Ejercicio 2</button></li>
+		</ul>
+		<div class="nav-separator"></div>
+		<ul>
+			<li><span class="nav-category">Developer:</span></li>
+			<li>
+				<p class="autor">Esteban Albarrán Tirado</p>
+			</li>
+			<li><span class="nav-category"></span></li>
+		</ul>
+	</nav>
+
+	<!-- Ejercicios Básicos -->
+
+	<section id="basicos17">
+		<h2>Ejercicios Básicos: Exercise 17</h2>
+		<p id="pbasicos17"></p>
+	</section>
+
+	<section id="basicos18">
+		<h2>Ejercicios Básicos: Exercise 18</h2>
+		<p id="pbasicos18"></p>
+	</section>
+
+	<section id="basicos19">
+		<h2>Ejercicios Básicos: Exercise 19</h2>
+		<p id="pbasicos19"></p>
+	</section>
+
+	<section id="basicos20">
+		<h2>Ejercicios Básicos: Exercise 20</h1>
+			<h3 id="titulo">Este es un encabezado</h3>
+	</section>
+
+	<section id="basicos21">
+		<h2 id="titlebasicos21">Ejercicios Básicos: Exercise 21</h2>
+		<div id="exerciseCuadritos21" style="background-color: black; text-align: center; max-width: 65%;">
+			<div style="width: 100px; height: 100px; margin: 10px; display: inline-block; background-color: red;"
+				id="cuadrado1" class="cuadrado"></div>
+			<div style="width: 100px; height: 100px; margin: 10px; display: inline-block; background-color: blue;"
+				id="cuadrado2" class="cuadrado"></div>
+			<div style="width: 100px; height: 100px; margin: 10px; display: inline-block; background-color: green;"
+				id="cuadrado3" class="cuadrado"></div>
+			<div style="width: 100px; height: 100px; margin: 10px; display: inline-block; background-color: aqua;"
+				id="cuadrado4" class="cuadrado"></div>
+			<div style="width: 100px; height: 100px; margin: 10px; display: inline-block; background-color: orange;"
+				id="cuadrado5" class="cuadrado"></div>
+		</div>
+	</section>
+
+	<!-- Ejercicios Intermedios -->
+	<section id="intermedios3">
+		<h2>Ejercicios Intermedios: Exercise 3</h2>
+		<form>
+			<h3>Validar DNI</h3>
+
+			<label for="dni">Introduce tu número de DNI:</label>
+			<input type="number" id="dni" name="dni" style="width: 6.2em" />
+			<br><br>
+			<label for="letra">Introduce la letra de tu DNI:</label>
+			<input type="text" id="letra" name="letra" style="width: 2em; text-transform: capitalize; margin-left: 0.35em" />
+
+			<br><br>
+			<button onclick="validarDNI()" style="margin-left: 1em; width: 5em; height: 2em;" id="check">Validar</button>
+			<button onclick="limpiarDNI()" style="margin-left: 2em; width: 5em; height: 2em;" id="clear">Limpiar</button>
+		</form>
+
+		<br>
+		<div id="resultado"></div>
+	</section>
+
+	<section id="intermedios6">
+		<h2>Ejercicios Intermedios: Exercise 6</h2>
+		<button onclick="calculoTiradas()">Ejecutar tiradas</button>
+		<button onclick="reset()">Reset</button>
+		<p id="pintermedios6" class="resultado-parrafo"></p>
+		<button id="irAbajo" onclick="window.scrollTo(0, 300)">Ir abajo</button>
+		<button id="volverArriba" onclick="window.scrollTo(0, 0)">Ir arriba</button>
+	</section>
+
+	<section id="intermedios8">
+		<h2>Ejercicios Intermedios: Exercise 8</h2>
+		<p>Escriba una cadena de texto:</p>
+		<input type="text" id="cadenatxt">
+		<button onclick="enviarCadena()">Comprobar</button>
+		<p id="pintermedio8"></p>
+	</section>
+
+	<section id="intermedios10">
+		<h2>Ejercicios Intermedios: Exercise 10</h2>
+
+		<h3>Pasa el ratón por encima del país para ver su capital.</h3>
+
+		<hr>
+		<p class="pais" style="font-size: 2em"><b>España</b></p>
+		<hr>
+		<p class="pais" style="font-size: 2em"><b>Portugal</b></p>
+		<hr>
+		<p class="pais" style="font-size: 2em"><b>Francia</b></p>
+		<hr>
+		<p class="pais" style="font-size: 2em"><b>Italia</b></p>
+		<hr>
+
+		<div id="divBandera" class="columna">
+			</p>
+			<img id="imagen_oculta1"
+				src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_España.svg/1200px-Bandera_de_España.svg.png"
+				style="display:none;">
+			<img id="imagen_oculta2"
+				src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/1200px-Flag_of_Portugal.svg.png"
+				style="display:none;">
+			<img id="imagen_oculta3"
+				src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_France_%281794–1815%2C_1830–1974%2C_2020–present%29.svg/1200px-Flag_of_France_%281794–1815%2C_1830–1974%2C_2020–present%29.svg.png"
+				style="display:none;">
+			<img id="imagen_oculta4" src="https://cdn.pixabay.com/photo/2013/07/13/14/15/italy-162326_1280.png"
+				style="display:none;">
+		</div>
+	</section>
+
+	<!-- Ejercicios Avanzados -->
+	<section id="avanzados2">
+		<h2>Ejercicios Intermedios: Avanzado 2</h2>
+		<div id="nameContainer" style="font-family: Comic Sans; font-size: 24px;"></div>
+		<p id="pavanzados2"></p>
+	</section>
+
+	<!-- Aquí se cargarán los contenidos de los archivos JS -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="./main.js"></script>
+</body>
+
+</html>
