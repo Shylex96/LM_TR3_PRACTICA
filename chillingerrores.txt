@@ -1,0 +1,24 @@
+Añadir botón abajo de reset página.
+location.reload()
+
+Agregar un boton al lado de cada ejercicio que se encargue de resetear el ejercicio
+Cuando haces clic en el botón "ejercicio 17" el boton se hace visible, al cargar la pagina esta oculto
+Cuando haces clic en el boton reset del ejercicio (volver a cargar el script)
+
+
+ACABADOS TOTALMENTE:
+17
+18
+19
+20
+21
+
+3
+6
+8
+10
+
+2
+
+Control de errores: no dejar meter numeros en el ejercicio 8, no dejar que escriba 1 letra solo
+Arreglar el 10
