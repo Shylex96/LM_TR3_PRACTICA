@@ -22,3 +22,6 @@ ACABADOS TOTALMENTE:
 
 Control de errores: no dejar meter numeros en el ejercicio 8, no dejar que escriba 1 letra solo
 Arreglar el 10
+Justificar el párrado del array con los 36.000 números
+Añadir las alertas
+Repasar y hacer mejor control de errores
