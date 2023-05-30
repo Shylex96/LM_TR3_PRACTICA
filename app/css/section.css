@@ -1,0 +1,91 @@
+section {
+  background-color: #444654;
+  padding: 20px;
+  overflow-y: auto;
+	margin-top: 10%;
+	margin-left: 40%;
+}
+
+h2 {
+	cursor: default;
+}
+
+#titlebasicos21 {
+  padding: 20px;
+  overflow-y: auto;
+	margin-left: 0%;
+}
+
+#basicos21 {
+	position: absolute;
+  padding: 20px;
+  overflow-y: auto;
+	margin-left: 43%;
+}
+
+#titulo {
+	cursor: pointer;
+	margin-top: 5%;
+	margin-left: 5%;
+}
+
+#intermedios10 {
+	padding: 20px;
+  overflow-y: auto;
+	margin-left: 15%;
+}
+
+#divBandera {
+	padding: 20px;
+  overflow-y: auto;
+	margin-left: 5%;
+}
+
+.resultado-parrafo {
+	max-width: 500px;
+	word-wrap: break-word;
+}
+
+#volverArriba, #irAbajo {
+	display: none;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	}
+	
+	.row {
+	display: flex;
+	justify-content: center;
+	}
+	
+.cuadrado {
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin: 10px;
+}
+	
+.cuadrado img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	}
+
+	
+.cuadrado:hover {
+	cursor: pointer;
+}
+
+#h2-banderas, #h3-banderas {
+	padding: 20px;
+  overflow-y: auto;
+	margin-left: 35%
+}

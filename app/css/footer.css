@@ -1,0 +1,56 @@
+.fixed-button {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin: 20px;
+	padding: 10px;
+	background-color: #1f1f1f;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	font-size: 24px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.fixed-button::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 4px;
+	height: 100%;
+	background: #41f190;
+	font-size: 16px;
+	transition: 0.35s ease-in-out;
+}
+
+.fixed-button::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 4px;
+	height: 100%;
+	background: #41f190;
+	font-size: 16px;
+	transition: 0.35s ease-in-out;
+}
+
+.fixed-button:hover {
+	background-color: aquamarine;
+	transition: background-color 2.5s ease-in-out; 
+	box-shadow: 0 0 25px #29d0f1;
+}
+
+.fixed-button:hover::before,
+.fixed-button:hover::after {
+	width: 50%;
+	transform: scale(1.125);
+}
+
+.fixed-button span {
+	position: relative;
+	z-index: 1;
+}
+
